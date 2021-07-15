@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Layout | Form | Content</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <p class="fs-4 head-color mar-tb">Bootstrap Layout:</p>
+    </div>
+    <!-- header start -->
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3 col-12">
+            <div class="box">1.1</div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-7">
+            <div class="box">1.2</div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-5">
+            <div class="box">1.3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-8 d-sm-block d-none">
+                <div class="box">2.1</div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">2.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box redbox">3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- body start -->
+    <section class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-9">
+                <div class="box">4.1</div>
+              </div>
+              <div class="col-sm-3 d-md-none d-block">
+                <div class="box redbox">3</div>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <div class="box">4.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box five">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- body end -->
+
+    <!-- bar start -->
+    <section class="bar d-md-none d-sm-block d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box five">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bar end -->
+
+    <!-- footer start -->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">6</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+
+
+    <!-- form validation start-->
+    <section>
+      <div class="container">
+        <p class="fs-4 head-color mar-tb">Bootstrap form validation:</p>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <!-- first name  -->
+          <div class="col-md-4">
+            <label for="f_name" class="form-label">First name</label>
+            <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your first name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter your first name
+            </div>
+
+          </div>
+
+          <!-- last name -->
+          <div class="col-md-4">
+            <label for="l_name" class="form-label">Last name</label>
+            <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter your last name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter your last name
+            </div>
+
+          </div>
+
+          <!-- username -->
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+
+          <!-- city -->
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <!-- state -->
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <!-- zip -->
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+
+          <!-- checkbox -->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+          <!-- submit button -->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!-- form validation end -->
+
+
+
+    <!-- bootstrap contents start -->
+    <section>
+      <div class="container">
+        <p class="fs-4 head-color mar-tb">Bootstrap Content:</p>
+        
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <br>
+        <p class="h1">h1. Bootstrap heading with p tag</p>
+        <p class="h2">h2. Bootstrap heading with p tag</p>
+        <p class="h3">h3. Bootstrap heading with p tag</p>
+        <br>
+        <h3>
+          Fancy display heading
+          <small class="text-muted">With faded secondary text</small>
+        </h3>
+
+
+        <br>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+
+        <br>
+        <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
+        <br>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>If you want to shine like a sun, first burn like a sun.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Someone famous in <cite title="APJ Abdul Kalam">APJ Abdul Kalam</cite>
+          </figcaption>
+        </figure>
+
+        <br>
+        <ul class="list-unstyled">
+          <li>This is a list.</li>
+          <li>It appears completely unstyled.</li>
+          <li>Structurally, it's still a list.</li>
+          <li>However, this style only applies to immediate child elements.</li>
+          <li>Nested lists:
+            <ul>
+              <li>are unaffected by this style</li>
+              <li>will still show a bullet</li>
+              <li>and have appropriate left margin</li>
+            </ul>
+          </li>
+          <li>This may still come in handy in some situations.</li>
+        </ul>
+
+
+        <br>
+        <img src="images/p_flower.jpg" class="img-thumbnail img-fluid" alt="Flower">
+
+        <br>
+        <br>
+        <br>
+        <table class="table table-success table-striped">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+          </table>
+
+        <br>
+        <br>
+        <table class="table table-dark table-hover">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+          </table>
+
+          <br>
+          <br>
+          <figure class="figure">
+            <img src="images/p_car.jpg" class="figure-img img-fluid rounded" alt="Car">
+            <figcaption class="figure-caption text-end">This is a super fast sports car.</figcaption>
+          </figure>
+
+
+      </div>
+    </section>
+    <!-- bootstrap contents end -->
+    
+
+    
+
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
